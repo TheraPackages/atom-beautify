@@ -8,6 +8,7 @@ module.exports = class VueBeautifier extends Beautifier
 
   options:
     Vue: true
+    Weex: true
 
   beautify: (text, language, options) ->
     return new @Promise((resolve, reject) ->

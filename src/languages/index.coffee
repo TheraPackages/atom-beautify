@@ -72,6 +72,7 @@ module.exports = class Languages
     "vala"
     "vue"
     "visualforce"
+    "weex"
     "xml"
     "xtemplate"
   ]
