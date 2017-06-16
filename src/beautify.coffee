@@ -603,7 +603,7 @@ plugin.migrateSettings = ->
     )
     atom.notifications.addSuccess("Successfully migrated options: #{unsupportedOptions.join(', ')}")
 
-plugin.config = _.merge(require('./config.coffee'), defaultLanguageOptions)
+plugin.config = _.merge(require('./config'), defaultLanguageOptions)
 plugin.activate = ->
   @subscriptions = new CompositeDisposable
   @subscriptions.add handleSaveEvent()
